@@ -47,7 +47,6 @@ const Navbar = () => {
                 <img className='w-10 h-10 object-cover rounded-full border-2 border-white' src={user?.photoURL ? user?.photoURL : userImg} alt="" />
               </div>
               <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-20 w-52 p-2 shadow-sm space-y-2">
-                <li><Link to={'/my-profile'} className='font-medium'>My Profile</Link></li>
                 <li><Link to={'/dashboard'} className='font-medium'>Dashboard</Link></li>
                 <li><button onClick={handleSignOut} className="btn bg-[#1651A9] text-white hover:bg-[#0f3e82] rounded-full px-6 transition-all duration-300 hover:scale-105 hover:shadow-lg border-0 font-medium">LogOut</button></li>
               </ul>
